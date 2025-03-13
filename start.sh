@@ -10,6 +10,7 @@ export PYTHONUNBUFFERED=true
 VIRTUALENV=./venv
 
 if [ ! -d $VIRTUALENV ]; then
+  python3 -m pip install -U pip
   python3 -m venv $VIRTUALENV
 fi
 
